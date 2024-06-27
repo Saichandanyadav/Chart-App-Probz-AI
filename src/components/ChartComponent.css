@@ -31,7 +31,7 @@
 }
 
 .export-png-button {
-  margin-top: 20px; /* Adjust spacing as needed */
+  margin-top: 20px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -47,15 +47,15 @@
 }
 
 .recharts-cartesian-grid line {
-  stroke: black; /* Set the color of the grid lines to black */
+  stroke: black;
 }
 
 .recharts-legend-item {
-  color: black; /* Set the color of the legend items to black */
+  color: black;
 }
 
 .recharts-tooltip {
-  color: black; /* Set the color of the tooltip text to black */
+  color: black;
 }
 
 .developer {
@@ -67,4 +67,16 @@
   border-color: black;
   text-decoration: none;
   margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .chart-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chart-container {
+    width: 100%;
+  }
 }

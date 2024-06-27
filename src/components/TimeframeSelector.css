@@ -1,5 +1,3 @@
-/* src/components/TimeframeSelector.css */
-
 .timeframe-selector {
   display: flex;
   justify-content: center;
@@ -23,7 +21,7 @@
 }
 
 .export-png-button {
-  margin-left: 20px; /* Adjust spacing as needed */
+  margin-left: 20px;
   padding: 16px;
   border: none;
   cursor: pointer;
@@ -36,4 +34,24 @@
 
 .export-png-button:hover {
   background-color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .timeframe-selector {
+    flex-direction: column;
+  }
+
+  .timeframe-selector button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timeframe-selector button {
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 12px;
+  }
 }

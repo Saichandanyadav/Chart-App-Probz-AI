@@ -33,3 +33,23 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 5px;
+  }
+
+  .app-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 5px;
+  }
+
+  .app-title {
+    font-size: 20px;
+  }
+}

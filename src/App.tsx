@@ -1,5 +1,3 @@
-// src/App.tsx
-
 import React, { useState } from "react";
 import ChartComponent from "./components/ChartComponent";
 import TimeframeSelector from "./components/TimeframeSelectorComponent";

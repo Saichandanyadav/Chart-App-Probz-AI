@@ -8,10 +8,10 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import * as htmlToImage from "html-to-image"; // Import html-to-image for exporting as PNG
-import { saveAs } from "file-saver"; // Import file-saver for downloading the PNG file
+import * as htmlToImage from "html-to-image";
+import { saveAs } from "file-saver";
 
-import "./ChartComponent.css"; // Import CSS for styling
+import "./ChartComponent.css";
 
 interface DataPoint {
   timestamp: string;
@@ -23,14 +23,13 @@ interface ChartComponentProps {
 }
 
 const ChartComponent: React.FC<ChartComponentProps> = ({ data }) => {
-  const chartRef = useRef<HTMLDivElement>(null); // Reference to chart container
+  const chartRef = useRef<HTMLDivElement>(null);
 
   const handleExportChart = () => {
     if (chartRef.current) {
       htmlToImage
         .toPng(chartRef.current)
         .then(function (dataUrl) {
-          // Use file-saver to download the PNG file
           saveAs(dataUrl!, "chart.png");
         })
         .catch(function (error) {
