@@ -1,0 +1,39 @@
+/* src/components/TimeframeSelector.css */
+
+.timeframe-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.timeframe-selector button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: transparent;
+  color: #333;
+}
+
+.timeframe-selector button.active {
+  background-color: black;
+  color: white;
+}
+
+.export-png-button {
+  margin-left: 20px; /* Adjust spacing as needed */
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #000000;
+  color: white;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+.export-png-button:hover {
+  background-color: #000000;
+}
